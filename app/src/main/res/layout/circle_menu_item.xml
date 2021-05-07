@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content" android:gravity="center">
+
+    <!-- 每一个id对应了某一个固定的变量吧 -->
+    <!-- 这里的布局居然要我自己写？ -->
+    <!-- 不知道这里的布局有什么意义呢？ 最后多看一看别人的教程，提高理解力 -->
+    <ImageView
+        android:id="@id/id_circle_menu_item_image"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        />
+    <TextView
+        android:id="@id/id_circle_menu_item_text"
+        android:layout_width="wrap_content"
+        android:visibility="gone"
+        android:layout_height="wrap_content"
+        android:textColor="@android:color/white"
+        android:text="保险？"
+        android:textSize="14.0dip"/>
+</LinearLayout>
