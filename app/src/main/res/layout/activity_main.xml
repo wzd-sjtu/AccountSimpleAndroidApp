@@ -17,6 +17,7 @@
         android:background="@mipmap/circle_bg3"
         >
 
+        <!-- RelativeLayout是相对布局，可以决定布局的长度、宽度和length -->
         <RelativeLayout
             android:id="@id/id_circle_menu_item_center"
             android:layout_width="wrap_content"

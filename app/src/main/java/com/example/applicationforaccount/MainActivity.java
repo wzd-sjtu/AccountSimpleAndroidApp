@@ -15,6 +15,7 @@ import android.widget.Toast;
 public class MainActivity extends AppCompatActivity {
     private long mExitTime;
 
+    // 这个其实就是自己定义的组件
     private CircleMenuLayout mCircleMenuLayout;
 
     private String[] mItemTexts = new String[] { "登录&注册", "关于我们", "心愿墙",
@@ -33,15 +34,24 @@ public class MainActivity extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
+        // 总而言之，载入了很多不同的界面，还是比较ok的
+        // 从开发难度来看，难度并不是特别的大的
         mCircleMenuLayout = (CircleMenuLayout) findViewById(R.id.id_menulayout);
         mCircleMenuLayout.setMenuItemIconsAndTexts(mItemImgs, mItemTexts);
         // 对应的某个构造函数
 
         mCircleMenuLayout.setOnMenuItemClickListener(new OnMenuItemClickListener() {
             public void itemClick(View view, int pos) {
-                if (mItemTexts[pos] == "特色设置") {
+                if (mItemTexts[pos] == "心愿墙") {
                     openWishWind(view);
-                };
+                }
+                else if(mItemTexts[pos] == "关于我们") {
+                    openAboutUsAddWind(view);
+                }
+                else if(mItemTexts[pos] == "统计") {
+                    openCountWind(view);
+                }
+                ;
             }
             public void itemCenterClick(View view) {
                 Toast.makeText(MainActivity.this, "you can do something just like login or register", Toast.LENGTH_SHORT).show();
@@ -49,11 +59,21 @@ public class MainActivity extends AppCompatActivity {
         });
 
     }
-
+    private void openAboutUsAddWind(View y) {
+        Intent intent = new Intent();
+        intent.setClass(MainActivity.this, AboutUsActivity.class);
+        this.startActivity(intent);
+    }
     private void openWishWind(View y) {
         Intent intent = new Intent();
         // 标准的调用别的服务的流程，过程是非常明确的，这一点是需要谨记的
         intent.setClass(MainActivity.this, WishActivity.class);
+        this.startActivity(intent);
+    }
+    protected void openCountWind(View y) {
+        Intent intent = new Intent();
+
+        intent.setClass(MainActivity.this, CountActivity.class);
         this.startActivity(intent);
     }
 }

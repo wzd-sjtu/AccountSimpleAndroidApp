@@ -19,6 +19,8 @@
 
         <!-- 牢记，这里有一个注册的事情，不注册的话，activity会直接被杀死 -->
         <activity android:name="com.example.applicationforaccount.WishActivity"></activity>
+        <activity android:name="com.example.applicationforaccount.AboutUsActivity"></activity>
+        <activity android:name="com.example.applicationforaccount.CountActivity"></activity>
 
 
     </application>

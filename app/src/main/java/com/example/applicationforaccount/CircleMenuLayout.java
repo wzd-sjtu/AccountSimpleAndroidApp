@@ -14,6 +14,7 @@ import android.view.View.OnClickListener;
 import android.widget.ImageView;
 import android.widget.TextView;
 
+// 这个是ViewGroup的子类，实现了对应的接口？是合理的
 public class CircleMenuLayout extends ViewGroup
 {
     private int mRadius;
@@ -80,6 +81,7 @@ public class CircleMenuLayout extends ViewGroup
      */
     private boolean isFling;
 
+    // 存放了某一个小菜单
     private int mMenuItemLayoutId = R.layout.circle_menu_item;
 
     public CircleMenuLayout(Context context, AttributeSet attrs)
@@ -460,6 +462,7 @@ public class CircleMenuLayout extends ViewGroup
      */
     private void addMenuItems()
     {
+        // 载入新的界面的方法，还是比较ok的哦
         LayoutInflater mInflater = LayoutInflater.from(getContext());
 
         /**
