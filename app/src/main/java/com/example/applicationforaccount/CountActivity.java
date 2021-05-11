@@ -13,12 +13,15 @@ import androidx.viewpager.widget.ViewPager;
 import java.util.List;
 import java.util.ArrayList;
 
+/*
 public class CountActivity {
 
     private TextView tv_year;
     private TextView item_detail, item_category_report;
     private Button btnAddRecord;
     private ViewPager vp;
+
+    // 这里的OneFragment是某一个新开辟的类
 
     private OneFragment oneFragment;
     private TwoFragment twoFragment;
@@ -36,3 +39,5 @@ public class CountActivity {
 
     // 这里的类的书写方式用到了android studio开发的核心知识，是值得认真学习的。
 }
+
+ */

@@ -18,10 +18,12 @@
         </activity>
 
         <!-- 牢记，这里有一个注册的事情，不注册的话，activity会直接被杀死 -->
+        <!-- 倘若不注册这里的页面，以后一旦创建，就会被安卓系统的后台直接杀死，从而无法写对应的程序 -->
+        <!-- 也就是我们经常看到的，点击某一个按钮以后，屏幕黑屏，无法继续跳转的结果 -->
         <activity android:name="com.example.applicationforaccount.WishActivity"></activity>
         <activity android:name="com.example.applicationforaccount.AboutUsActivity"></activity>
         <activity android:name="com.example.applicationforaccount.CountActivity"></activity>
-
+        <activity android:name="com.example.dao.DBOpenHelper"></activity>
 
     </application>
 
