@@ -4,6 +4,7 @@ import android.content.Context;
 import android.database.sqlite.SQLiteDatabase;
 import android.database.sqlite.SQLiteOpenHelper;
 
+// 这里启用了比较小的数据库表，本地数据库SQLlite
 public class DBOpenHelper extends SQLiteOpenHelper {
     public DBOpenHelper(Context context, String name, SQLiteDatabase.CursorFactory factory,
                         int version) {
@@ -23,7 +24,7 @@ public class DBOpenHelper extends SQLiteOpenHelper {
         db.execSQL("create table if not exists refCode_tb(_id integer primary key autoincrement," +
                 "CodeType text not null," +
                 "CodeID text not null," +
-                "CodeName text null)");
+                "CodeName text not null)");
 
         //costDetail_tb
         db.execSQL("create table if not exists basicCode_tb(_id integer primary key autoincrement," +

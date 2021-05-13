@@ -23,6 +23,7 @@
         <activity android:name="com.example.applicationforaccount.WishActivity"></activity>
         <activity android:name="com.example.applicationforaccount.AboutUsActivity"></activity>
         <activity android:name="com.example.applicationforaccount.CountActivity"></activity>
+        <activity android:name="com.example.applicationforaccount.OneFragment"></activity>
         <activity android:name="com.example.dao.DBOpenHelper"></activity>
 
     </application>

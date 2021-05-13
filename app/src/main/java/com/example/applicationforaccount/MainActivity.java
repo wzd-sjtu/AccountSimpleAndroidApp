@@ -49,7 +49,7 @@ public class MainActivity extends AppCompatActivity {
                     openAboutUsAddWind(view);
                 }
                 else if(mItemTexts[pos] == "统计") {
-                    openCountWind(view);
+                    openAboutUsAddWind(view);
                 }
                 ;
             }
@@ -70,10 +70,13 @@ public class MainActivity extends AppCompatActivity {
         intent.setClass(MainActivity.this, WishActivity.class);
         this.startActivity(intent);
     }
+    /*
     protected void openCountWind(View y) {
         Intent intent = new Intent();
-
+        // 这里的CountActivity是失败了emm
         intent.setClass(MainActivity.this, CountActivity.class);
         this.startActivity(intent);
     }
+    */
+
 }
